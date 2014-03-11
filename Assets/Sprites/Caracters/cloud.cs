@@ -5,11 +5,12 @@ public class cloud : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		//var arvo = null;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate(Vector3.left * Time.deltaTime, Space.World);
+		//var arvo = null;
+		transform.Translate(Vector3.right * Time.deltaTime, Space.World);
 	}
 }
