@@ -11,6 +11,6 @@ public class cloud : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//var arvo = null;
-		transform.Translate(Vector3.right * Time.deltaTime, Space.World);
+		transform.Translate(Vector3.left * Time.deltaTime/4, Space.World);
 	}
 }
