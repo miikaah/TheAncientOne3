@@ -1,45 +1,45 @@
 ﻿#pragma strict
 
-// Attach this script to an orthographic camera.
-
-private var object : Transform; // The object we will move.
-private var offSet : Vector3; // The object's position relative to the mouse position.
+private var object : Transform;
+private var offSet : Vector3;
 private var dist : float;
+var root : Transform;
+var test : float;
 
 function Update () {
 	
-	var ray = camera.ScreenPointToRay(Input.mousePosition); // Gets the mouse position in the form of a ray.
+	var ray = camera.ScreenPointToRay(Input.mousePosition);
 	
-	if (Input.GetButtonDown("Fire1")) { // If we click the mouse...
-		
-		if (!object) { // And we are not currently moving an object...
-			
+	if (Input.GetButtonDown("Fire1")) {
+		if (!object) {
 			var hit : RaycastHit;
 			
-			if (Physics.Raycast(ray, hit, Mathf.Infinity) && (hit.collider.tag == "Draggable")) { // Then see if an object is beneath us using raycasting.
-				
-				object = hit.transform; // If we hit an object then hold on to the object.
-				
-				offSet = object.position-hit.point; // This is so when you click on an object its center does not align with mouse position.
-				
-				dist = (ray.origin - hit.point).magnitude; // Distance to the object from ray origin.
-				
+			if (Physics.Raycast(ray, hit, Mathf.Infinity) && (hit.collider.tag == "Draggable")) 
+			{
+				object = hit.transform; // i think this is the problem
+				offSet = object.position-hit.point;
+				dist = (ray.origin - hit.point).magnitude;
 			}
-			
 		}
-		
 	}
 	
-	else if (Input.GetButtonUp("Fire1")) {
-		
-		object = null; // Let go of the object.
-		
+	else if (Input.GetButtonUp("Fire1")) 
+	{
+		object = null;
 	}
-	
-	if (object) {
-		
-		object.position = ray.GetPoint(dist) + offSet; // Only move the object on a 2D plane.
-		
+	if (object) 
+	{
+		object.position = ray.GetPoint(dist) + offSet;
 	}
+}
+
+function getLength(object : Transform) : float
+{
+	var length : float;
+	var rootx : float = root.transform.position.x - object.transform.position.x;
+	var rooty : float = root.transform.position.y - object.transform.position.y;
+	var rootz : float = root.transform.position.z - object.transform.position.z;
 	
+	length = Mathf.Sqrt((rootx*rootx)+(rooty*rooty)+(rootz*rootz));
+	return length;
 }
