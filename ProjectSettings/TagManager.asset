@@ -38,7 +38,31 @@ TagManager:
   User Layer 30: 
   User Layer 31: 
   m_SortingLayers:
+  - name: background
+    userID: 2
+    uniqueID: 1759691665
+    locked: 0
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: legsarm
+    userID: 4
+    uniqueID: 2332368555
+    locked: 0
+  - name: torso
+    userID: 3
+    uniqueID: 1242312785
+    locked: 0
+  - name: head
+    userID: 1
+    uniqueID: 3527320003
+    locked: 0
+  - name: weapon
+    userID: 6
+    uniqueID: 879735485
+    locked: 0
+  - name: fronthand
+    userID: 5
+    uniqueID: 2081251197
     locked: 0
