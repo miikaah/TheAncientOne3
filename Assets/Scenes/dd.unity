@@ -406,6 +406,52 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c8f907706911827469c5e49ea4de108f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &141910680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 141910682}
+  - 131: {fileID: 141910681}
+  m_Layer: 0
+  m_Name: upper menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &141910681
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 141910680}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: b8c61d021d7c58449967f7d437f26d51, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -354.5
+    y: 80
+    width: 709
+    height: 81
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 11
+  m_BottomBorder: 0
+--- !u!4 &141910682
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 141910680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &144774668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,7 +1517,7 @@ GameObject:
   - 212: {fileID: 699632278}
   - 95: {fileID: 699632277}
   m_Layer: 0
-  m_Name: Warrior
+  m_Name: Warrior_einay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1782,6 +1828,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32993a1d2f53a9e47a3ce9fb1499ccbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &739217033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 739217035}
+  - 131: {fileID: 739217034}
+  m_Layer: 0
+  m_Name: bottomtrim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &739217034
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 739217033}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 79c463b66f1f2f14cb352ff051f128d4, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -354.5
+    y: -160
+    width: 709
+    height: 13
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &739217035
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 739217033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &808540071
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,7 +3808,7 @@ GameObject:
   - 212: {fileID: 1526822159}
   - 95: {fileID: 1526822158}
   m_Layer: 0
-  m_Name: Warrior
+  m_Name: Warrior_einay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
