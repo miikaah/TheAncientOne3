@@ -981,7 +981,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 423772113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.25941205, y: -.972496033, z: 0}
+  m_LocalPosition: {x: .70895803, y: -1.08258688, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1076329895}
@@ -1999,6 +1999,7 @@ GameObject:
   - 4: {fileID: 811087219}
   - 212: {fileID: 811087218}
   - 54: {fileID: 811087220}
+  - 114: {fileID: 811087221}
   m_Layer: 0
   m_Name: testijumala_1
   m_TagString: Player
@@ -2036,7 +2037,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 811087217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .116882563, y: .0689328909, z: 9.38853073}
+  m_LocalPosition: {x: -.235408545, y: .129999995, z: 9.38853073}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 732109297}
@@ -2057,6 +2058,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 124
   m_CollisionDetection: 0
+--- !u!114 &811087221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 811087217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306b0b9d86579f44b9b3de9361526c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  object: {fileID: 811087219}
 --- !u!1 &834216722
 GameObject:
   m_ObjectHideFlags: 0
@@ -2298,7 +2311,7 @@ MonoBehaviour:
   useFixedUpdate: 1
   movement:
     maxForwardSpeed: 10
-    maxSidewaysSpeed: 10
+    maxSidewaysSpeed: 1
     maxBackwardsSpeed: 10
     slopeSpeedMultiplier:
       serializedVersion: 2
@@ -2334,8 +2347,8 @@ MonoBehaviour:
     enabled: 1
     movementTransfer: 2
   sliding:
-    enabled: 1
-    slidingSpeed: 15
+    enabled: 0
+    slidingSpeed: 5
     sidewaysControl: 1
     speedControl: .400000006
 --- !u!143 &892606207
@@ -2513,7 +2526,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 899203887}
   - 212: {fileID: 899203889}
-  - 114: {fileID: 899203888}
   m_Layer: 0
   m_Name: head
   m_TagString: Untagged
@@ -2532,21 +2544,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1953093260}
---- !u!114 &899203888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 899203886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d798d0491d3fb7849ba5a2e5b3aec329, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  MoveSpeed: 4
-  MaxDist: 10
-  MinDist: 5
 --- !u!212 &899203889
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3021,7 +3018,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1076329895}
   - 212: {fileID: 1076329896}
-  - 114: {fileID: 1076329897}
   m_Layer: 0
   m_Name: head
   m_TagString: Untagged
@@ -3063,21 +3059,6 @@ SpriteRenderer:
   m_SortingLayerID: 3527320003
   m_Sprite: {fileID: 21300000, guid: 047b08f20643dc447a1a5f5a4040d7d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &1076329897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1076329894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d798d0491d3fb7849ba5a2e5b3aec329, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  MoveSpeed: 4
-  MaxDist: 10
-  MinDist: 5
 --- !u!1 &1136581335
 GameObject:
   m_ObjectHideFlags: 0
@@ -4138,7 +4119,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 1, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -5.78788573e-09, y: -.86529839, z: -9.2433325e-08}
+  m_ConnectedAnchor: {x: -1.71969987e-07, y: -.865298629, z: -9.24333392e-08}
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_LowTwistLimit:
     limit: -20
