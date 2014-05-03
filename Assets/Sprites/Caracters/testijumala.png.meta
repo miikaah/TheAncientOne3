@@ -61,8 +61,8 @@ TextureImporter:
         y: 72
         width: 202
         height: 351
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .499999911, y: .0411465839}
     - name: testijumala_2
       rect:
         serializedVersion: 2
@@ -71,7 +71,7 @@ TextureImporter:
         width: 84
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: testijumala_3
       rect:
         serializedVersion: 2
