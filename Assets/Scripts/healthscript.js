@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
-    var curHealth : int = 100;
-    var maxHealth : int = 100;
+    static var curHealth : int = 50;
+    static var maxHealth : int = 100;
     var healthtext : GUIText;
     
     function Start () {
@@ -29,9 +29,8 @@
     for(i=1;i>0;i++) {
     yield WaitForSeconds(1);
      
-    //if(curHealth < maxHealth) {
-    if(curHealth > 0) {
-    curHealth--;
+    if(curHealth < maxHealth) {
+    curHealth++;
     }
      
      
