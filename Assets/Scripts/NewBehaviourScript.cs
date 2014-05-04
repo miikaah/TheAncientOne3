@@ -6,12 +6,15 @@ public class NewBehaviourScript : MonoBehaviour {
 public Transform target;
 public float moveSpeed=0.5f;
 public int rotationSpeed;
+	private GameObject obj;
 public int maxdistance;
 private Transform myTransform;
 
 void Awake()
 {
 	myTransform = transform;
+	obj=GameObject.FindWithTag ("Player");
+		target = obj.transform;
 }
 	
 void Update ()

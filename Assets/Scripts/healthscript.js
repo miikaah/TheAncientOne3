@@ -11,11 +11,13 @@
     function Update () {
      
      
-    healthtext.text = "Health: " + curHealth + " / " + maxHealth;
+    healthtext.text =curHealth + " / " + maxHealth;
      
      
-    if(curHealth < 0 ) {
+    if(curHealth <= 0 ) {
     curHealth = 0;
+    Application.LoadLevel(2);
+    
     }
      
     if(curHealth > 100) {

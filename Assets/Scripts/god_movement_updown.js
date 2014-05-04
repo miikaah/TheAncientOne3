@@ -10,15 +10,15 @@ function Update () {
 	if (Input.GetAxis("Horizontal") >=0.1 || Input.GetAxis("Horizontal") <=-0.1){
 		if(state == 1){
 			object.transform.localPosition.y -= 0.005;
-			if (object.transform.localPosition.y <= -1.6){
-			object.transform.localPosition.y = -1.6;
+			if (object.transform.localPosition.y <= -1.8){
+			object.transform.localPosition.y = -1.8;
 			state = 0;
 			}
 		}
 		if (state == 0){
 			object.transform.localPosition.y += 0.005;
-			if (object.transform.localPosition.y >= -1.3){
-			object.transform.localPosition.y = -1.3;
+			if (object.transform.localPosition.y >= -1.5){
+			object.transform.localPosition.y = -1.5;
 			state = 1;
 			}
 		}

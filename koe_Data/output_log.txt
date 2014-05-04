@@ -17,14 +17,54 @@ Platform assembly: C:\Users\Toni\Documents\GitHub\TheAncientOne3\koe_Data\Manage
 Loading C:\Users\Toni\Documents\GitHub\TheAncientOne3\koe_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Toni\Documents\GitHub\TheAncientOne3\koe_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\Toni\Documents\GitHub\TheAncientOne3\koe_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.070 seconds
+- Completed reload, in  0.048 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-UnloadTime: 0.379311 ms
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+UnloadTime: 0.346811 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 354.
-Total: 0.602536 ms (FindLiveObjects: 0.015822 ms CreateObjectMapping: 0.007697 ms MarkObjects: 0.072270 ms  DeleteObjects: 0.041052 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 541.
+Total: 0.672241 ms (FindLiveObjects: 0.018388 ms CreateObjectMapping: 0.008980 ms MarkObjects: 0.081250 ms  DeleteObjects: 0.014111 ms)
 
 Platform assembly: C:\Users\Toni\Documents\GitHub\TheAncientOne3\koe_Data\Managed\Boo.Lang.dll (this message is harmless)
+NullReferenceException: Object reference not set to an instance of an object
+  at dragjava.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at dragjava.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at dragjava.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at dragjava.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at dragjava.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at dragjava.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at dragjava.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at dragjava.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
